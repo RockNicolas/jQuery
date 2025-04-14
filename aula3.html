@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>KEYPRESS</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script> //Entendendo evento keypress, keyUp, Focus
+        $(document).ready(function () {
+            $("#txtFone").focus();
+
+            $("#txtFone").keypress(function (e) {
+                if(e.which == 13){
+                    $("#txtData").focus();
+                }
+            });
+
+            $("#txtFone").keyup(function () {
+                alert($("#txtFone").val());
+            });
+        });
+
+    </script>
+</head>
+<body>
+    Telefone: <input type="text" id="txtFone" >
+    Data: <input type="text" id="txtData" >
+</body>
+</html>
