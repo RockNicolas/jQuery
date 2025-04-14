@@ -4,21 +4,46 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script> //ENTENDENDO O CLICK
         $(document).ready(function () {
+
+            $("img").fadeOut(0);
+            $("img").fadeIn(6000);
+
             
             $("#par1").click(function(){
                 $(this).slideUp();
+            });
+
+            $("#par2").click(function(){
+                $(this).fadeOut(5000, function() {
+                    alert("Cliente excluido com sucesso.");
+                });
+            });
+
+            $("#par3").click(function(){
+                $("#part2").fadeOut(5000) ;
             });
 
             $("h1").click(function(){
                 $(this).slideUp();
             });
         });
-        
+
     </script>
 </head>
 <body>
-    <p id="par1">Resultado: 10 + 10 = 20</p>
-    <p>Resultado: 20 + 20 = 40</p>
+    <p id="par1">Resultado: 10 + 10 = 20</p><br>
+
+    <p id="par2">Rock</p><br>
+
+    <p id="par3">Rock 2</p><br>
+
     <h1>EXEMPLO JQUERY</h1>
+
+    <br><br>
+
+    <img 
+        src="https://production.autoforce.com/uploads/version/profile_image/11499/model_middle_webp_comprar-standard-azul-metalico-mat-noturno-blue-metallic_d716ca8c14.png.webp"
+
+    >
 </body>
 </html>
