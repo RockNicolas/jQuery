@@ -1,4 +1,4 @@
-//Entendendo evento change
+//Entendendo evento change e function text()
 $(document).ready(function () {
     $("#txtFone").focus();
 
