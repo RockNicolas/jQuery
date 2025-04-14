@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Click</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script> //ENTENDENDO O CLICK
+        $(document).ready(function () {
+            
+            $("#par1").click(function(){
+                $(this).slideUp();
+            });
+
+            $("h1").click(function(){
+                $(this).slideUp();
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    <p id="par1">Resultado: 10 + 10 = 20</p>
+    <p>Resultado: 20 + 20 = 40</p>
+    <h1>EXEMPLO JQUERY</h1>
+</body>
+</html>
