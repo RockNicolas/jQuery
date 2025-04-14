@@ -2,33 +2,7 @@
 <head>
     <title>Click</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script> //ENTENDENDO O CLICK E ALGUNS EFFEITOS DE IMGS
-        $(document).ready(function () {
-
-            $("img").fadeOut(0);
-            $("img").fadeIn(6000);
-
-            
-            $("#par1").click(function(){
-                $(this).slideUp();
-            });
-
-            $("#par2").click(function(){
-                $(this).fadeOut(5000, function() {
-                    alert("Cliente excluido com sucesso.");
-                });
-            });
-
-            $("#par3").click(function(){
-                $("#part2").fadeOut(5000) ;
-            });
-
-            $("h1").click(function(){
-                $(this).slideUp();
-            });
-        });
-
-    </script>
+    <script src="/js//aula2.js"></script>
 </head>
 <body>
     <p id="par1">Resultado: 10 + 10 = 20</p><br>
@@ -43,7 +17,6 @@
 
     <img 
         src="https://production.autoforce.com/uploads/version/profile_image/11499/model_middle_webp_comprar-standard-azul-metalico-mat-noturno-blue-metallic_d716ca8c14.png.webp"
-
     >
 </body>
 </html>
